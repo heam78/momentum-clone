@@ -49,7 +49,6 @@ function paintToDo(text, isFinished) {
   delBtn.addEventListener("click", deleteToDo);
   toggleBtn.innerHTML = "✔";
   toggleBtn.addEventListener("click", toggleToDo);
-
   span.innerText = text;
   li.appendChild(toggleBtn);
   li.appendChild(span);
