@@ -18,10 +18,10 @@ body {
   align-items: center;
   justify-content: center;
   margin: 0;
+  align-content: space-around;
 }
 
 .main {
-  margin-top: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -59,19 +59,20 @@ body {
 }
 
 .js-clock {
-  font-size: 5em;
+  font-size: 4em;
 }
 
 .js-form {
-  padding-top: 10px;
-  font-size: 2em;
+  margin: 0;
+  padding: 0;
+  font-size: 1.5em;
   flex-direction: column;
   text-align: center;
   height: 100%;
 }
 .greetInput {
   width: 80%;
-  font-size: 3.2rem;
+  font-size: 2.5rem;
   text-align: center;
   border: none;
   background: transparent;
@@ -84,18 +85,22 @@ body {
 }
 
 .js-greetings {
-  font-size: 3em;
-  margin-bottom: 25%;
+  font-size: 2em;
 }
 
-.js-toDoForm {
+.allToDo {
   font-size: 1.5em;
-  margin-bottom: 3em;
 }
 
+.write {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
 .toDoInput {
   width: 100%;
-  font-size: 25px;
+  font-size: 20px;
   padding-left: 8px;
   border: none;
   border-radius: 0;
@@ -111,10 +116,29 @@ body {
 
 .js-toDoList {
   list-style: none;
-  font-size: 1.5em;
+  font-size: 1em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .js-weather {
-  color: white;
+  position: fixed;
+  top: 10px;
+  right: 40px;
   font-size: 1.5em;
+}
+
+button {
+  background: transparent;
+  border: none;
+  color: white;
+  font-size: 25px;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+.finished {
+  text-decoration: line-through;
 }
